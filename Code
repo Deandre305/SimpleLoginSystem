@@ -1,0 +1,28 @@
+package main;
+
+import javax.swing.JOptionPane;
+
+public class Simple_Login_System {
+
+	public static void main(String[] args) {
+		// FIRST PROJECT CREATING A SIMPLE LOGIN SYSTEM
+		
+		String validname = "Username123";
+		String validpassword = "Password123";
+		
+		String user = JOptionPane.showInputDialog(null, "Welcome to ISpaceX. Please enter your username.");	
+		String pass = JOptionPane.showInputDialog(null, "Hello " +user+". Please enter your password.");	
+		
+		if (user.equals(validname)&&(pass.equals(validpassword))) {
+			JOptionPane.showMessageDialog(null, "Welcome "+user+". Login has been authenticated.");		
+		}
+		else {
+			JOptionPane.showMessageDialog(null, "Login could not be authenticated. Username or password incorrect.");	
+		}
+
+		JOptionPane.getRootFrame().dispose();
+
+	}
+	
+		
+}
